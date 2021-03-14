@@ -10,9 +10,9 @@ import {EStatus} from "./Select.types";
 let timeoutSearch: ReturnType<typeof setTimeout>;
 
 const Select: React.FC = () => {
+
     const dispatch = useDispatch();
     const selectFilterOption = useSelector(selectFilter);
-
     const [load, setLoad] = useState(false);
 
     const onChangeHandler = (value: string) => {
